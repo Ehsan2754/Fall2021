@@ -1,0 +1,122 @@
+Number of Maps  = 20
+Samples per Map = 10
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Wrote input for Map #10
+Wrote input for Map #11
+Wrote input for Map #12
+Wrote input for Map #13
+Wrote input for Map #14
+Wrote input for Map #15
+Wrote input for Map #16
+Wrote input for Map #17
+Wrote input for Map #18
+Wrote input for Map #19
+Starting Job
+2021-10-31 12:26:21,743 INFO client.RMProxy: Connecting to ResourceManager at server-1/10.0.0.11:8032
+2021-10-31 12:26:22,930 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/vagrant/.staging/job_1635708342673_0001
+2021-10-31 12:26:24,039 INFO input.FileInputFormat: Total input files to process : 20
+2021-10-31 12:26:24,258 INFO mapreduce.JobSubmitter: number of splits:20
+2021-10-31 12:26:24,406 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+2021-10-31 12:26:24,789 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1635708342673_0001
+2021-10-31 12:26:24,793 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2021-10-31 12:26:25,334 INFO conf.Configuration: resource-types.xml not found
+2021-10-31 12:26:25,335 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2021-10-31 12:26:26,843 INFO impl.YarnClientImpl: Submitted application application_1635708342673_0001
+2021-10-31 12:26:26,939 INFO mapreduce.Job: The url to track the job: http://server-1:8088/proxy/application_1635708342673_0001/
+2021-10-31 12:26:26,941 INFO mapreduce.Job: Running job: job_1635708342673_0001
+2021-10-31 12:26:42,501 INFO mapreduce.Job: Job job_1635708342673_0001 running in uber mode : false
+2021-10-31 12:26:42,506 INFO mapreduce.Job:  map 0% reduce 0%
+2021-10-31 12:26:54,126 INFO mapreduce.Job:  map 5% reduce 0%
+2021-10-31 12:26:59,213 INFO mapreduce.Job:  map 10% reduce 0%
+2021-10-31 12:27:01,312 INFO mapreduce.Job:  map 15% reduce 0%
+2021-10-31 12:27:02,465 INFO mapreduce.Job:  map 20% reduce 0%
+2021-10-31 12:27:11,113 INFO mapreduce.Job:  map 25% reduce 0%
+2021-10-31 12:27:15,598 INFO mapreduce.Job:  map 30% reduce 0%
+2021-10-31 12:27:16,659 INFO mapreduce.Job:  map 35% reduce 0%
+2021-10-31 12:27:22,807 INFO mapreduce.Job:  map 45% reduce 0%
+2021-10-31 12:27:25,865 INFO mapreduce.Job:  map 50% reduce 0%
+2021-10-31 12:27:29,957 INFO mapreduce.Job:  map 55% reduce 0%
+2021-10-31 12:27:30,981 INFO mapreduce.Job:  map 60% reduce 0%
+2021-10-31 12:27:40,890 INFO mapreduce.Job:  map 65% reduce 0%
+2021-10-31 12:27:43,959 INFO mapreduce.Job:  map 75% reduce 0%
+2021-10-31 12:27:48,018 INFO mapreduce.Job:  map 80% reduce 25%
+2021-10-31 12:27:54,086 INFO mapreduce.Job:  map 80% reduce 27%
+2021-10-31 12:27:56,158 INFO mapreduce.Job:  map 85% reduce 27%
+2021-10-31 12:27:59,953 INFO mapreduce.Job:  map 85% reduce 28%
+2021-10-31 12:28:05,962 INFO mapreduce.Job:  map 90% reduce 30%
+2021-10-31 12:28:09,082 INFO mapreduce.Job:  map 95% reduce 30%
+2021-10-31 12:28:12,205 INFO mapreduce.Job:  map 95% reduce 32%
+2021-10-31 12:28:13,229 INFO mapreduce.Job:  map 100% reduce 32%
+2021-10-31 12:28:14,262 INFO mapreduce.Job:  map 100% reduce 100%
+2021-10-31 12:28:16,328 INFO mapreduce.Job: Job job_1635708342673_0001 completed successfully
+2021-10-31 12:28:17,692 INFO mapreduce.Job: Counters: 53
+        File System Counters
+                FILE: Number of bytes read=446
+                FILE: Number of bytes written=4521925
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=5310
+                HDFS: Number of bytes written=215
+                HDFS: Number of read operations=85
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=3
+        Job Counters
+                Launched map tasks=20
+                Launched reduce tasks=1
+                Data-local map tasks=20
+                Total time spent by all maps in occupied slots (ms)=1057380
+                Total time spent by all reduces in occupied slots (ms)=343704
+                Total time spent by all map tasks (ms)=264345
+                Total time spent by all reduce tasks (ms)=42963
+                Total vcore-milliseconds taken by all map tasks=264345
+                Total vcore-milliseconds taken by all reduce tasks=42963
+                Total megabyte-milliseconds taken by all map tasks=1082757120
+                Total megabyte-milliseconds taken by all reduce tasks=351952896
+        Map-Reduce Framework
+                Map input records=20
+                Map output records=40
+                Map output bytes=360
+                Map output materialized bytes=560
+                Input split bytes=2950
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=2
+                Reduce shuffle bytes=560
+                Reduce input records=40
+                Reduce output records=0
+                Spilled Records=80
+                Shuffled Maps =20
+                Failed Shuffles=0
+                Merged Map outputs=20
+                GC time elapsed (ms)=9013
+                CPU time spent (ms)=38140
+                Physical memory (bytes) snapshot=3753787392
+                Virtual memory (bytes) snapshot=107461427200
+                Total committed heap usage (bytes)=2449297408
+                Peak Map Physical memory (bytes)=225533952
+                Peak Map Virtual memory (bytes)=4966293504
+                Peak Reduce Physical memory (bytes)=127938560
+                Peak Reduce Virtual memory (bytes)=8200683520
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters
+                Bytes Read=2360
+        File Output Format Counters
+                Bytes Written=97
+Job Finished in 116.215 seconds
+Estimated value of Pi is 3.12000000000000000000

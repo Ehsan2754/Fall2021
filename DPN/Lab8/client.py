@@ -13,19 +13,35 @@ if __name__ == '__main__':
             cmd = input_.split()
             if len(cmd) == 1:
                 if cmd[0] == 'getleader':
-                    if not proxy:
-                        # TODO: GET_LEADER CONNECTED NODE BY RPC-SERVER
-                        LEADER_ID, LEADER_ADDR_PORT_PAIR = proxy.getleader()
-                        print(CLIENT_MSGS.LEADER_ADDR_MSG.format(LEADER_ID,
-                                                                 LEADER_ADDR_PORT_PAIR[0],
-                                                                 LEADER_ADDR_PORT_PAIR[1]))
+                    if proxy:
+                        try:
+                            # TODO: GET_LEADER CONNECTED NODE BY RPC-SERVER
+                            LEADER_ID, LEADER_ADDR_PORT_PAIR = proxy.GetLeader()
+                            print(CLIENT_MSGS.LEADER_ADDR.format(LEADER_ID,
+                                                                    LEADER_ADDR_PORT_PAIR[0],
+                                                                    LEADER_ADDR_PORT_PAIR[1]))
+                        except ConnectionRefusedError as e:
+                            proxy = None
+                            print(CLIENT_MSGS.PROXY_NA.format(
+                                TARGET_ADDR, TRAGET_PORT))
+                    else:
+                        print('!First connect to node!')
             elif len(cmd) == 2:
                 if cmd[0] == 'suspend':
-                    if cmd[1].isnumeric() and nodes.get(int(cmd[1]), None):
-                        TARGET_ID = int(cmd[1])
-                        if not proxy:
+                    if cmd[1].isnumeric():
+                        period = int(cmd[1])
+                        if proxy:
+                            try:
                             # TODO: SUSPEND CONNECTED NODE BY RPC-SERVER
-                            proxy.suspend(TARGET_ID)
+                                proxy.Suspend(period)
+
+                            except ConnectionRefusedError as e:
+                                proxy = None
+                                print(CLIENT_MSGS.PROXY_NA.format(
+                                    TARGET_ADDR, TRAGET_PORT))
+
+                        else:
+                            print('!First connect to node!')
                     else:
                         raise BadArgumentException(
                             '!NODE-ID NOT IN CONFIGURATION FILE')
@@ -34,16 +50,10 @@ if __name__ == '__main__':
                     if cmd[2].isnumeric():
                         TARGET_ADDR = cmd[1]
                         TRAGET_PORT = cmd[2]
-                        try:
-                            proxy = xmlrpc.client.ServerProxy(
-                                PROXY_URI.format(TARGET_ADDR, TRAGET_PORT))
-                            r = proxy.getleader()
-                            suspend = proxy.suspend()
+                        proxy = xmlrpc.client.ServerProxy(
+                            PROXY_URI.format(TARGET_ADDR, TRAGET_PORT))
 
-                        except ConnectionRefusedError as e:
-                            proxy = None
-                            print(CLIENT_MSGS.PROXY_NA.format(
-                                TARGET_ADDR, TRAGET_PORT))
+
 
             else:
                 raise BadArgumentException("!INVALID ENTRY FORMAT.")
@@ -55,4 +65,4 @@ if __name__ == '__main__':
     except Exception as e:
         print(e)
     finally:
-        print(CLIENT_MSGS.EXIT_MSG)
+        print(CLIENT_MSGS.EXIT)

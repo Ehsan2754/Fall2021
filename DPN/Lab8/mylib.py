@@ -1,9 +1,22 @@
+import random
 CONFIG_PATH = 'config.conf'
 PROXY_URI = 'http://{0}:{1}/'
-TIME_RANGE = (150,300)
+DEFAULT_PATH = '/'
+TIME_RANGE = (150, 300)
+
+
 class SERVER_MSGS:
     START = 'Server is started at {0}:{1}'
-    SLEEP = 'Sleeping for {} seconds.'
+    SLEEP = 'Sleeping for {0} seconds.'
+    VOTE = 'Voted for node {0}'
+    DEAD_LEADER = 'The leader is dead'
+    FOLLOWER_STATUS = 'I am a follower. Term: {0}'
+    CANDIDATE_STATUS = 'I am a candidate. Term: {0}'
+    LEADER_STATUS = 'I am a leader. Term: {0}'
+    GET_LEADER = 'Command from client: getleader'
+    SUSPEND = 'Command from client: suspend {0}'
+    VOTE_RECEIVED = 'Votes received'
+
 
 class CLIENT_MSGS:
     START = 'The client starts'
@@ -17,10 +30,19 @@ class BadArgumentException(Exception):
     pass
 
 # My exception for bad argument
+
+
 class BadConfigException(Exception):
     pass
 
+# random time generator 
+def getTimerInterval():
+    timeInterval = (random.randint(*TIME_RANGE))/100
+    return timeInterval
+
 # Parses the configuration file
+
+
 def parseConf(path):
     try:
         EMPTY_LINE = ''
@@ -46,10 +68,9 @@ def getIDfromArgs(args):
         raise BadArgumentException('!INPUT ARGUMENT IS NOT VALID.')
 
 # NODE STATES
+
+
 class NODE_STATE:
     Follower = 'Follower'
     Candidate = 'Candidate'
     Leader = 'Leader'
-
-
-

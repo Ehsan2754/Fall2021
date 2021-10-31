@@ -1,0 +1,80 @@
+Configured Capacity: 93497118720 (87.08 GB)
+Present Capacity: 78335926272 (72.96 GB)
+DFS Remaining: 78324412416 (72.95 GB)
+DFS Used: 11513856 (10.98 MB)
+DFS Used%: 0.01%
+Replicated Blocks:
+	Under replicated blocks: 6
+	Blocks with corrupt replicas: 0
+	Missing blocks: 0
+	Missing blocks (with replication factor 1): 0
+	Pending deletion blocks: 0
+Erasure Coded Block Groups: 
+	Low redundancy block groups: 0
+	Block groups with corrupt internal blocks: 0
+	Missing block groups: 0
+	Pending deletion blocks: 0
+
+-------------------------------------------------
+Live datanodes (3):
+
+Name: 10.0.0.11:9866 (server-1)
+Hostname: server-1
+Decommission Status : Normal
+Configured Capacity: 31165706240 (29.03 GB)
+DFS Used: 3837952 (3.66 MB)
+Non DFS Used: 3448397824 (3.21 GB)
+DFS Remaining: 26106740736 (24.31 GB)
+DFS Used%: 0.01%
+DFS Remaining%: 83.77%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 1
+Last contact: Sun Oct 31 12:45:43 PDT 2021
+Last Block Report: Sun Oct 31 11:10:26 PDT 2021
+Num of Blocks: 124
+
+
+Name: 10.0.0.12:9866 (server-2)
+Hostname: server-2
+Decommission Status : Normal
+Configured Capacity: 31165706240 (29.03 GB)
+DFS Used: 3837952 (3.66 MB)
+Non DFS Used: 3446427648 (3.21 GB)
+DFS Remaining: 26108710912 (24.32 GB)
+DFS Used%: 0.01%
+DFS Remaining%: 83.77%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 1
+Last contact: Sun Oct 31 12:45:41 PDT 2021
+Last Block Report: Sun Oct 31 11:10:26 PDT 2021
+Num of Blocks: 124
+
+
+Name: 10.0.0.13:9866 (server-3)
+Hostname: server-3
+Decommission Status : Normal
+Configured Capacity: 31165706240 (29.03 GB)
+DFS Used: 3837952 (3.66 MB)
+Non DFS Used: 3446177792 (3.21 GB)
+DFS Remaining: 26108960768 (24.32 GB)
+DFS Used%: 0.01%
+DFS Remaining%: 83.77%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 1
+Last contact: Sun Oct 31 12:45:43 PDT 2021
+Last Block Report: Sun Oct 31 11:10:26 PDT 2021
+Num of Blocks: 124
+
+

@@ -1,0 +1,8 @@
+#lang slideshow
+(require 2htdp/image)
+( define conway-example (
+                         lambda (i j)
+                          (
+
+                           )
+                         ))
