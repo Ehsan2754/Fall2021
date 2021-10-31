@@ -1,0 +1,1 @@
+Copy the content of hadoop-conf in hadoop/etc/hadoop directory.
