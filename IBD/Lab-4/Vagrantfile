@@ -11,6 +11,7 @@ Vagrant.configure("2") do |config|
    subconfig.vm.network :private_network, ip: "10.0.0.11"
    subconfig.vm.network "forwarded_port", guest: 8088, host: 8088
    subconfig.vm.provider "virtualbox" do |v|
+    v.customize ['modifyvm', :id, '--cableconnected1', 'on']
     v.memory = 512
    end
  end
@@ -21,6 +22,7 @@ Vagrant.configure("2") do |config|
    subconfig.vm.hostname = "server-2"
    subconfig.vm.network :private_network, ip: "10.0.0.12"
    subconfig.vm.provider "virtualbox" do |v|
+    v.customize ['modifyvm', :id, '--cableconnected1', 'on']
     v.memory = 512
    end
  end
@@ -31,6 +33,7 @@ Vagrant.configure("2") do |config|
    subconfig.vm.hostname = "server-3"
    subconfig.vm.network :private_network, ip: "10.0.0.13"
    subconfig.vm.provider "virtualbox" do |v|
+    v.customize ['modifyvm', :id, '--cableconnected1', 'on']
     v.memory = 512
    end
  end
