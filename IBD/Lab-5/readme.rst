@@ -1,0 +1,35 @@
+# Most Common Words
+``` text
+104     so
+105     but
+109     they
+117     little
+121     ‘I
+122     not
+122     this
+127     very
+137     or
+146     for
+148     on
+154     be
+168     all
+175     had
+203     her
+211     at
+214     with
+221     Alice
+226     that
+246     as
+260     I
+301     you
+329     was
+356     it
+401     in
+416     said
+484     she
+596     of
+662     a
+773     to
+780     and
+1664    the
+```
