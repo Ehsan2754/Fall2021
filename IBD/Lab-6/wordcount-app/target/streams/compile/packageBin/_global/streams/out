@@ -1,0 +1,9 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /vagrant/.ignore/lab-6/app/wordcount-app/target/scala-2.12/spark-wordcount_2.12-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Wordcount[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /vagrant/.ignore/lab-6/app/wordcount-app/target/scala-2.12/classes/Wordcount[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Wordcount/MainClass$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /vagrant/.ignore/lab-6/app/wordcount-app/target/scala-2.12/classes/Wordcount/MainClass$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Wordcount/MainClass.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /vagrant/.ignore/lab-6/app/wordcount-app/target/scala-2.12/classes/Wordcount/MainClass.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

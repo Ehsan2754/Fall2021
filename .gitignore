@@ -3,3 +3,5 @@
 .ignore*
 *.box
 *.tar.gz
+project/*
+target/*
