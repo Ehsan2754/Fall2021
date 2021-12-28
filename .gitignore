@@ -5,3 +5,5 @@
 *.tar.gz
 project/*
 target/*
+lab-8/*.txt
+yelp-dataset

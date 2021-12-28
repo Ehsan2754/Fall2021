@@ -65,5 +65,6 @@ myPictureGrid = Grid
 -- Implement this function. Try using higher-order functions.
 renderGrid :: Grid Picture -> Picture
 renderGrid (Grid rows) = blank
+fun :: [a]->[[a]]
 
 main = drawingOf (scaled 2 2 (translated (-4) 4 (renderGrid myPictureGrid)))
